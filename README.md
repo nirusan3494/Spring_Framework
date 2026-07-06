@@ -1,100 +1,113 @@
-# 🚀 Spring Framework Journey
+# Spring Framework Learning Repository
 
-Welcome to my Spring Framework learning repository.
+## Overview
 
-This repository documents my journey of learning the Spring Framework from its core fundamentals while following industry-standard practices and building real-world examples.
+This repository documents my hands-on learning journey through the Spring Framework Core. Each project focuses on a single concept and is implemented independently to build a strong understanding of Spring's internal architecture before moving to Spring Boot and enterprise application development.
 
-The goal of this repository is not only to write working code but also to understand how Spring works internally and how its concepts are applied in enterprise applications.
-
----
-
-# 📚 Project 01 – Spring Core Foundation
-
-## 📌 01 – Single Bean
-
-**Concepts Covered**
-
-* Spring IoC Container
-* ApplicationContext
-* Spring Bean
-* Component Scanning
-* Bean Creation Process
+The objective of this repository is to understand how the Spring IoC Container manages objects, performs dependency injection, handles bean lifecycles, and supports various configuration approaches.
 
 ---
 
-## 📌 02 – Constructor Dependency Injection
+## Technologies
 
-**Concepts Covered**
-
-* Constructor Injection
-* Dependency Graph
-* Bean Creation Order
-* Bean Relationships
+- Java 25
+- Spring Framework 7
+- Maven
+- IntelliJ IDEA
 
 ---
 
-## 📌 03 – Multi-Level Dependency Injection
+## Spring Core Concepts Covered
 
-**Project Flow**
-
-Developer → Laptop → Processor
-
-**Concepts Covered**
-
-* Multi-Level Bean Dependencies
-* Constructor Injection
-* Object-Oriented Design
-* Spring Dependency Resolution
-
----
-
-## 📌 04 – Multiple Dependencies
-
-**Project Flow**
-
-OrderService → PaymentService + NotificationService
-
-**Concepts Covered**
-
-* Injecting Multiple Beans
-* Spring IoC
-* Constructor Injection
-* Bean Collaboration
+- Inversion of Control (IoC)
+- Dependency Injection (DI)
+- Constructor Injection
+- Spring Beans
+- Bean Scopes
+- Component Scanning
+- Stereotype Annotations
+- `@Component`
+- `@Service`
+- `@Repository`
+- `@Controller`
+- `@Autowired`
+- `@Primary`
+- `@Qualifier`
+- Java-Based Configuration
+- `@Configuration`
+- `@Bean`
+- Bean Lifecycle
+- `@PostConstruct`
+- `@PreDestroy`
 
 ---
 
-# 🛠️ Tech Stack
+## Projects
 
-* Java
-* Spring Framework
-* Maven
-* IntelliJ IDEA
-* Git
-* GitHub
-
----
-
-# 🎯 Repository Objective
-
-This repository serves as a structured learning portfolio of my Spring Framework journey.
-
-Each project focuses on a specific concept, allowing me to build a strong foundation before moving to advanced enterprise application development.
-
-The primary objectives are:
-
-* Understand Spring concepts rather than memorizing annotations.
-* Follow industry-standard coding practices.
-* Build clean, maintainable, and scalable applications.
-* Learn Spring from fundamentals to enterprise-level development.
+| Project | Description |
+|---------|-------------|
+| 01-Single-Bean | Creating and retrieving a single Spring Bean from the IoC container |
+| 02-Multiple-Beans | Managing multiple beans inside the Spring container |
+| 03-Developer-Laptop-Processor | Constructor Dependency Injection using multiple dependent objects |
+| 04-OrderService-Payment-Notification | Multi-level dependency injection demonstrating layered object relationships |
+| 05-Qualifier-Primary-Interface | Resolving multiple implementations using `@Primary` and `@Qualifier` |
+| 06-Configuration-and-Bean | Java-based configuration using `@Configuration` and `@Bean` |
+| 07-Stereotype-Annotations-Layered-Architecture | Component scanning and layered architecture using stereotype annotations |
+| 08-Spring-Bean-Lifecycle | Bean initialization and destruction using `@PostConstruct` and `@PreDestroy` |
 
 ---
 
-# 📈 Progress
+## Repository Structure
 
-* [x] Project 01 – Spring Core Foundation
+```text
+Spring_Framework
+│
+├── Project-01-Spring-Core
+│   ├── 01-Single-Bean
+│   ├── 02-Multiple-Beans
+│   ├── 03-Developer-Laptop-Processor
+│   ├── 04-OrderService-Payment-Notification
+│   ├── 05-Qualifier-Primary-Interface
+│   ├── 06-Configuration-and-Bean
+│   ├── 07-Stereotype-Annotations-Layered-Architecture
+│   └── 08-Spring-Bean-Lifecycle
+│
+└── README.md
+```
 
 ---
 
-## ⭐ Thank you for visiting!
+## Learning Outcomes
 
-This repository will continue to grow as I learn and build more Spring Framework projects.
+After completing these projects, I gained practical understanding of:
+
+- How the Spring IoC Container manages objects.
+- Constructor-based dependency injection.
+- Bean creation and lifecycle management.
+- Singleton and Prototype bean scopes.
+- Component scanning and stereotype annotations.
+- Java-based configuration using `@Configuration` and `@Bean`.
+- Bean lifecycle callbacks using `@PostConstruct` and `@PreDestroy`.
+- Layered application architecture following Controller-Service-Repository design.
+
+---
+
+## Next Step
+
+The next phase of this learning journey focuses on Spring Boot, including:
+
+- Spring Boot Fundamentals
+- Auto Configuration
+- Starter Dependencies
+- Embedded Web Server
+- Spring Boot REST APIs
+- Spring Data JPA
+- Hibernate Integration
+- Spring Security
+- Microservices
+
+---
+
+## Purpose
+
+This repository serves as a personal reference, a structured learning resource, and a demonstration of my understanding of Spring Framework Core concepts through practical implementation.
