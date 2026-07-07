@@ -2,13 +2,13 @@
 
 ## Overview
 
-This repository documents my hands-on learning journey through the Spring Framework Core. Each project focuses on a single concept and is implemented independently to build a strong understanding of Spring's internal architecture before moving to Spring Boot and enterprise application development.
+This repository documents my hands-on journey of learning the **Spring Framework** through small, concept-focused projects. Each project explores a core Spring concept independently, helping me build a strong foundation before moving to Spring Boot and enterprise application development.
 
-The objective of this repository is to understand how the Spring IoC Container manages objects, performs dependency injection, handles bean lifecycles, and supports various configuration approaches.
+The primary goal of this repository is to understand how the Spring IoC Container manages objects, performs dependency injection, handles bean lifecycles, and supports different bean configuration approaches.
 
 ---
 
-## Technologies
+## Technologies Used
 
 - Java 25
 - Spring Framework 7
@@ -19,41 +19,66 @@ The objective of this repository is to understand how the Spring IoC Container m
 
 ## Spring Core Concepts Covered
 
+### Core Concepts
 - Inversion of Control (IoC)
 - Dependency Injection (DI)
-- Constructor Injection
+- Spring IoC Container
 - Spring Beans
 - Bean Scopes
-- Component Scanning
-- Stereotype Annotations
+- Bean Lifecycle
+
+### Dependency Injection
+- Constructor Injection
+- Setter Injection
+- Field Injection
+- `@Autowired`
+
+### Bean Configuration
+- Java-Based Configuration
+- XML-Based Configuration
+- `@Configuration`
+- `@Bean`
+- `@ComponentScan`
+- `@Lazy`
+
+### Stereotype Annotations
 - `@Component`
 - `@Service`
 - `@Repository`
 - `@Controller`
-- `@Autowired`
+
+### Bean Resolution
 - `@Primary`
 - `@Qualifier`
-- Java-Based Configuration
-- `@Configuration`
-- `@Bean`
-- Bean Lifecycle
+
+### Bean Properties
+- `@Value`
+- External Configuration using `application.properties`
+
+### Bean Lifecycle
 - `@PostConstruct`
 - `@PreDestroy`
 
 ---
 
-## Projects
+# Project 01 - Spring Core
 
-| Project | Description |
-|---------|-------------|
-| 01-Single-Bean | Creating and retrieving a single Spring Bean from the IoC container |
-| 02-Multiple-Beans | Managing multiple beans inside the Spring container |
-| 03-Developer-Laptop-Processor | Constructor Dependency Injection using multiple dependent objects |
-| 04-OrderService-Payment-Notification | Multi-level dependency injection demonstrating layered object relationships |
-| 05-Qualifier-Primary-Interface | Resolving multiple implementations using `@Primary` and `@Qualifier` |
-| 06-Configuration-and-Bean | Java-based configuration using `@Configuration` and `@Bean` |
-| 07-Stereotype-Annotations-Layered-Architecture | Component scanning and layered architecture using stereotype annotations |
-| 08-Spring-Bean-Lifecycle | Bean initialization and destruction using `@PostConstruct` and `@PreDestroy` |
+| No. | Project | Concept |
+|:---:|---------|---------|
+| 01 | Single Bean | Creating and retrieving a Spring Bean from the IoC Container |
+| 02 | Multiple Beans | Managing multiple Spring Beans |
+| 03 | Developer-Laptop-Processor | Constructor Dependency Injection |
+| 04 | OrderService-Payment-Notification | Multi-level Dependency Injection |
+| 05 | Qualifier-Primary-Interface | Resolving multiple implementations using `@Primary` and `@Qualifier` |
+| 06 | Configuration-and-Bean | Java-Based Configuration using `@Configuration` and `@Bean` |
+| 07 | Stereotype-Annotations-Layered-Architecture | Component Scanning with Layered Architecture |
+| 08 | Spring-Bean-Lifecycle | Bean Lifecycle using `@PostConstruct` and `@PreDestroy` |
+| 09 | Setter-Injection | Setter-based Dependency Injection |
+| 10 | Field-Injection | Field-based Dependency Injection |
+| 11 | Lazy-Initialization | Eager vs Lazy Bean Initialization |
+| 12 | Value-Annotation | Injecting Literal Values using `@Value` |
+| 13 | Value-With-Properties | External Configuration using `application.properties` |
+| 14 | Spring-XML-Bean-Configuration | XML Bean Configuration and `ref` Injection |
 
 ---
 
@@ -70,7 +95,13 @@ Spring_Framework
 │   ├── 05-Qualifier-Primary-Interface
 │   ├── 06-Configuration-and-Bean
 │   ├── 07-Stereotype-Annotations-Layered-Architecture
-│   └── 08-Spring-Bean-Lifecycle
+│   ├── 08-Spring-Bean-Lifecycle
+│   ├── 09-Setter-Injection
+│   ├── 10-Field-Injection
+│   ├── 11-Lazy-Initialization
+│   ├── 12-Value-Annotation
+│   ├── 13-Value-With-Properties
+│   └── 14-Spring-XML-Bean-Configuration
 │
 └── README.md
 ```
@@ -81,33 +112,70 @@ Spring_Framework
 
 After completing these projects, I gained practical understanding of:
 
-- How the Spring IoC Container manages objects.
-- Constructor-based dependency injection.
-- Bean creation and lifecycle management.
-- Singleton and Prototype bean scopes.
-- Component scanning and stereotype annotations.
-- Java-based configuration using `@Configuration` and `@Bean`.
-- Bean lifecycle callbacks using `@PostConstruct` and `@PreDestroy`.
-- Layered application architecture following Controller-Service-Repository design.
+- Spring IoC Container
+- Dependency Injection (Constructor, Setter and Field Injection)
+- Bean Creation and Lifecycle
+- Singleton and Prototype Bean Scopes
+- Lazy Bean Initialization
+- Component Scanning
+- Stereotype Annotations
+- Java-Based Configuration
+- XML-Based Configuration
+- External Property Injection
+- Bean Lifecycle Management
+- Layered Application Architecture
 
 ---
 
-## Next Step
+## Upcoming Learning Roadmap
 
-The next phase of this learning journey focuses on Spring Boot, including:
+The next phase of this repository will focus on:
 
+### Project 02 - Spring Boot
 - Spring Boot Fundamentals
 - Auto Configuration
 - Starter Dependencies
-- Embedded Web Server
-- Spring Boot REST APIs
-- Spring Data JPA
+- Embedded Tomcat
+
+### Project 03 - Spring MVC
+- MVC Architecture
+- Controllers
+- Views
+- Request Mapping
+
+### Project 04 - Spring Data JPA
 - Hibernate Integration
-- Spring Security
-- Microservices
+- CRUD Operations
+- JPQL
+- Relationships
+
+### Project 05 - Spring Security
+- Authentication
+- Authorization
+- JWT
+- Role-Based Access Control
+
+### Project 06 - Spring Boot REST APIs
+- RESTful Services
+- Validation
+- Exception Handling
+- Swagger/OpenAPI
+
+### Project 07 - Microservices
+- Spring Cloud
+- API Gateway
+- Service Discovery
+- Config Server
+- Docker
+- Kubernetes (Basics)
 
 ---
 
 ## Purpose
 
-This repository serves as a personal reference, a structured learning resource, and a demonstration of my understanding of Spring Framework Core concepts through practical implementation.
+This repository serves as:
+
+- A structured record of my Spring learning journey.
+- A personal reference for revising Spring concepts.
+- A portfolio showcasing practical Spring Framework projects.
+- A foundation for Spring Boot and enterprise Java development.
